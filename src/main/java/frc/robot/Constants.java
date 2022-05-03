@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import edu.wpi.first.math.util.Units;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -12,4 +14,29 @@ package frc.robot;
  * <p>It is advised to statically import this class (or one of its inner classes) wherever the
  * constants are needed, to reduce verbosity.
  */
-public final class Constants {}
+public final class Constants 
+{
+    //Motor ID
+    public static final int BACK_RIGHT_MOTOR = 2;
+
+    //default PID values
+    public static final double DEFAULT_P = 0.00435;
+    public static final double DEFAULT_I = 0.0;
+    public static final double DEFAULT_D = 0.003;
+
+    //Default FF
+    public static final double DEFAULT_S = 0.0;
+    public static final double DEFAULT_V = 0.1335;
+
+    //Default max velocity
+    public static final double DEFAULT_VEL = 2000;
+
+    //Circumference
+    public static final double CIRCUMFERENCE = Units.inchesToMeters(6 * Math.PI);
+
+    // Joystick port
+    public static final int JOYSTICK = 0;
+
+
+
+}
