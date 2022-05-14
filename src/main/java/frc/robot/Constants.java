@@ -20,22 +20,27 @@ public final class Constants
     public static final int BACK_RIGHT_MOTOR = 2;
 
     //default PID values
-    public static final double DEFAULT_P = 0.00435;
+    public static final double DEFAULT_P = 0.000001;
     public static final double DEFAULT_I = 0.0;
-    public static final double DEFAULT_D = 0.003;
+    public static final double DEFAULT_D = 0.000;
 
     //Default FF
     public static final double DEFAULT_S = 0.0;
     public static final double DEFAULT_V = 0.1335;
 
     //Default max velocity
-    public static final double DEFAULT_VEL = 2000;
+    public static final double DEFAULT_VEL = 500;
 
     //Circumference
     public static final double CIRCUMFERENCE = Units.inchesToMeters(6 * Math.PI);
 
     // Joystick port
     public static final int JOYSTICK = 0;
+
+    //electrical constants
+    public static final double ramp_rate = 0.2;
+    public static final double voltage_comp = 12.0;
+    public static final int current_limit = 60;
 
 
 
