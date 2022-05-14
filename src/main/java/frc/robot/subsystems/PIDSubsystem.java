@@ -34,6 +34,9 @@ public class PIDSubsystem extends SubsystemBase {
       sparkEncoder = testMotor.getEncoder();
 
       pid.setFF(Constants.DEFAULT_V);
+      pid.setP(Constants.DEFAULT_P);
+      pid.setI(Constants.DEFAULT_I);
+      pid.setD(Constants.DEFAULT_D);
 
 
   }
