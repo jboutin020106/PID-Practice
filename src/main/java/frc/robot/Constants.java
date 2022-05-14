@@ -26,7 +26,7 @@ public final class Constants
 
     //Default FF
     public static final double DEFAULT_S = 0.0;
-    public static final double DEFAULT_V = 0.1335;
+    public static final double DEFAULT_V = 0.000202;
 
     //Default max velocity
     public static final double DEFAULT_VEL = 500;

@@ -10,6 +10,7 @@ import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.commands.ExampleCommand;
 import frc.robot.commands.SetPIDCommand;
 import frc.robot.subsystems.ExampleSubsystem;
@@ -47,6 +48,9 @@ public class RobotContainer {
     pid.setDefaultCommand(setPIDCommand);
 
     configureButtonBindings();
+
+    SmartDashboard.putData(pid);
+    SmartDashboard.putData(setPIDCommand);
   }
 
   /**
